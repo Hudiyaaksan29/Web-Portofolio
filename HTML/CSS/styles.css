@@ -1,0 +1,339 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #000000;
+}
+
+/* Header dan navigasi */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 0;
+    text-align: center;
+    color: white; /* Mengatur warna teks di header menjadi putih */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #443d3d;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #494040;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+/* Hero section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #ffffff;
+}
+
+/* Section about */
+.about-section, .projects-section, .contact-section {
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.about-section h1, .projects-section h1, .contact-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Projects section */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-card .btn:hover {
+    background-color: #ffffff;
+}
+
+/* Contact section */
+
+.social-media {
+    list-style-type: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.social-media li {
+    margin: 10px 0; /* Spasi antara item */
+}
+
+.social-media a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #007bff; /* Warna tautan */
+}
+
+.social-media a:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label, form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form .btn {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form .btn:hover {
+    background-color: #000000;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    .skills-container, .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-card, .project-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* Styling untuk foto profil */
+.foto-profil {
+    width: 200px; /* Lebar foto */
+    height: 180px; /* Tinggi foto */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    margin-bottom: 20px; /* Spasi di bawah foto */
+    border-radius: 0px; /* Sudut membulat (opsional) */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Memastikan tinggi body 100% dari viewport */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Mengatur arah konten menjadi kolom */
+    min-height: 10vh; /* Memastikan wrapper setinggi viewport */
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: white;
+    padding: 10px; /* Mengurangi padding header */
+    text-align: center;
+}
+
+.hero {
+    flex: 0 1 auto; /* Memungkinkan area hero mengambil ruang yang dibutuhkannya */
+    padding: 20px; /* Padding yang sesuai */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000; /* Warna latar belakang footer */
+    color: white; /* Warna teks footer */
+}
+
+h1, h2, p {
+    margin: 0; /* Menghilangkan margin default */
+    padding: 10px 0; /* Tambahkan padding atas dan bawah yang lebih kecil */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 10px; /* Mengurangi padding pada layar kecil */
+    }
+
+    header {
+        padding: 5px; /* Mengurangi padding header pada layar kecil */
+    }
+}
+
+.text-box {
+    border: 2px solid #333; /* Warna dan ketebalan batas */
+    background-color: #f9f9f9; /* Warna latar belakang */
+    padding: 20px; /* Ruang di dalam kotak */
+    margin: 20px 0; /* Ruang di luar kotak */
+    border-radius: 8px; /* Membuat sudut kotak membulat */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan di bawah kotak */
+}
